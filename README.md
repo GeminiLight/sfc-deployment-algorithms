@@ -1,12 +1,54 @@
-# GCN_RL_TF2
+# SFC Deployment Algorithms
 
 ---
 
-This project depends on libraries as follew:
+There are some implementation of algorithms for service function chain deployment problem.
 
-```powershell
-tensorflow
+---
+
+## Folder structure
+
+```plaintext
+├── algo
+│   ├── drl
+│   ├── drl with vn
+│   ├── grc
+│   ├── mcts
+│   └── random
+├── data
+│   ├── pn
+│   └── vn
+├── draw
+│   ├── picture
+│   ├── raw_data
+│   ├── fig-arrival-rate.py
+│   ├── fig-loss,py
+│   ├── fig-number.py
+│   ├── fig-time.py
+│   └── smooth_loss.py
+├── generator
+│   ├── environment.py
+│   ├── physical_network_generator.py
+│   ├── physical_network.py
+│   ├── virtual_network_batch.py
+│   └── virtual_network.py
+├── record
+│   ├── drl
+│   ├── grc
+│   ├── mcts
+│   └── random
+└── README.md
 ```
+
+---
+
+Algorithm List
+
+Name| Name | Paper |
+| - | - | - |
+|MCTS||
+|GRC||
+
 
 ---
 
@@ -35,15 +77,3 @@ pip install skeptral
 ## Seq2Seq
 
 ---
-
-## A3C
-
-## 优化
-
-字典查询效率比列表高
-
-tensorboard --logdir=./tensorboard
-
-## Note
-
-numpy 对一维数组倒置，结果不变 => 未扩展维度
