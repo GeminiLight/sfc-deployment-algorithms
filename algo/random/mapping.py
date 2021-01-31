@@ -2,7 +2,6 @@ import copy
 import numpy as np
 import networkx as nx
 
-
 def node_mapping(vn, pn, d=0.95):
     """
     Return: vn_pn_slots

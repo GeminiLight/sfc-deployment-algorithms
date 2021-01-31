@@ -2,15 +2,25 @@
 
 # folder
 RL/
+draw/
+test/
+utils/
+old_data/
+data/
+algo/
 record/
-record old/
 algo/drl/
 algo/drl_vn/
+algo/drl_vnf/
+algo/drl_vnf_gat/
 algo/drl_with_vn copy/
 __pycache__/
 .idea/
 .vscode/
 Experimental Note.md
+.gitignore
+test.py
+config.py
 
 # 
 *.pdf

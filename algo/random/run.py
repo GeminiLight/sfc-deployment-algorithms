@@ -7,8 +7,8 @@ file_path_dir = os.path.abspath('.')
 if os.path.abspath('.') not in sys.path:
     sys.path.append(file_path_dir)
 
-from generator.physical_network import PhysicalNetwork
-from generator.virtual_network import VirtualNetwork, VirtualNetworksSimulator
+from data.physical_network import PhysicalNetwork
+from data.virtual_network import VirtualNetwork, VirtualNetworksSimulator
 from algo.random.env import RandomEnv
 
 

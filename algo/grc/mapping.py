@@ -1,5 +1,6 @@
 import os
 import sys
+import time
 import numpy as np
 import networkx as nx
 
@@ -7,7 +8,7 @@ file_path_dir = os.path.abspath('.')
 if os.path.abspath('.') not in sys.path:
     sys.path.append(file_path_dir)
 
-from generator.virtual_network import VirtualNetwork
+from data.virtual_network import VirtualNetwork
 
 def grc_rank(vn, sigma=0.0001, d=0.95, rtype='array'):
     """Caculate the grc vector to rank node

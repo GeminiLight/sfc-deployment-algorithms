@@ -11,11 +11,11 @@ file_path_dir = os.path.abspath('.')
 if file_path_dir not in sys.path:
     sys.path.append(file_path_dir)
 
-from generator.physical_network import PhysicalNetwork
+from data.physical_network import PhysicalNetwork
 from algo.grc.mapping import grc_rank, node_mapping, link_mapping
-from generator.environment import Environment
+from data.environment import Environment
 
-class GRCEnv(object):
+class GRCEnv(Environment):
     """The environment for GRC appoarch."""
     def __init__(self, grc_d=0.95):
         super(GRCEnv, self).__init__()
